@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/autograph_bg" >
+
+
+
+    <LinearLayout android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/rl_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00f" >
+<LinearLayout
+    android:layout_marginLeft="10dp"
+  android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_new_file"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="onNewFileClick"
+            android:src="@drawable/file" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_new_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New"
+            android:textColor="#ffffff" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_insert"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/insert" />
+
+        <TextView
+            android:id="@+id/tv_insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Insert"
+            android:textColor="#ffffff" />
+</LinearLayout>
+    <LinearLayout
+android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_up_arrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="10dp"
+            android:src="@drawable/uparrowcircle" />
+
+        <ImageView
+            android:id="@+id/iv_down_arrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/downarrowcircle"
+            android:paddingBottom="10dp"
+            android:visibility="gone" />
+        </LinearLayout>
+    <LinearLayout
+android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/save" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    <LinearLayout
+       android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_settings"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
